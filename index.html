@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Nicolò</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+        <div class="topnav" id="myTopnav">
+            <h2 class="header-title">MyPage</h2>
+            <div class="header-right">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="introduction">
+          <h1>Ciao, sono Nicolò</h1>
+          <p>Benvenuto, continua a scorrere per sapere di più su di me</p>
+        </div>
+        <div>
+          <img class="imgrotondo" src="immaginep.jpg">
+        </div>
+      </div>
+    </div>
+  </header>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+  </body>
+</html>
