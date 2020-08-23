@@ -4,38 +4,52 @@
   <head>
     <meta charset="utf-8">
     <title>Nicolò</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-
-        <div class="topnav" id="myTopnav">
-            <h2 class="header-title">MyPage</h2>
-            <div class="header-right">
-                <a href="#home" class="active">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="introduction">
-          <h1>Ciao, sono Nicolò</h1>
-          <p>Benvenuto, continua a scorrere per sapere di più su di me</p>
-        </div>
-        <div>
-          <img class="imgrotondo" src="immaginep.jpg">
-        </div>
       </div>
     </div>
+    <div class="topnav" id="myTopnav">
+      <h2 class="header-title">MyPage</h2>
+      <div class="header-right">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+  </div>
   </header>
+  <section>
+    <h1 class="grandpaspeech">"Unni vai, vai a' lassari sìempri u' ciauru" </h1>
+    <div class="grandpaexplanation">
+      <p>Questo è ciò che mi ha insegnato mio nonno; ovunque tu vada lascia sempre il tuo profumo.</p>
+      <p>Distinguiti sempre, fai sì che gli altri non si possano dimenticare di te. Questo è quel che mi ha guidato in ogni aspetto della mia vita </p>
+    </div>
+  </section>
+  <section>
+    <div class="skills">
+      <h2 style="font-size:300%">My Skills.</h2>
+      <div class="skill-row">
+        <img class="images" src="cappuccio.jpg" alt="cappuccio">
+        <h3>Lorem & Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+      </div>
+      <div class="skill-row">
+        <img class="images" src="boxing-4677527_1920.jpg" alt="boxing">
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      </div>
+    </div>
+  </section>
     <script>
         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {

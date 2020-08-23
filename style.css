@@ -1,20 +1,21 @@
-*{
+body{
   margin:0;
   padding:0;
+  font-family: 'Playfair Display', serif;
+  text-align:center;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background: linear-gradient(to right, #005086,#318fb5);
+    background-color:#f3e6e3;
     overflow: hidden;
-    border-bottom: #1f4068 solid;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #0f0e0e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -26,13 +27,6 @@
     background-color: #ddd;
     color: black;
   }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
@@ -43,22 +37,42 @@
   }
   .header-title{
       float:left;
-      color:white;
+      color: #0f0e0e;
       margin:0.3% 1%;
   }
 
   .jumbotron {
     width:100% ;
-    background: linear-gradient(to right, #005086,#318fb5);
+    background-image: url("alley-3630540_1920.jpg");
+    background-size: 100% 100%;
     margin:0 0 0 0;
   }
   .container{
     display:flex;
     justify-content: space-around;
+    height: 34rem;
   }
-  .imgrotondo{
+  .grandpaspeech{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 60px;
+  }
+  .grandpaexplanation{
+    text-align:center;
+    line-height: 0%;
+  }
+  .images{
+    float:left;
+    width: 25%;
+    margin:5px 17px 0px 0;
     border-radius: 50%;
-  }
+}
+.skill-row{
+  display: inline-block;
+  width:50%;
+  margin: 100px auto;
+  text-align:left;
+
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
