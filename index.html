@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Nicolò</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -12,22 +13,24 @@
   <body>
     <header>
       <div class="topnav" id="myTopnav">
-        <h2 class="header-title">MyPage</h2>
+        <h2 class="header-title">Carrozza</h2>
         <div class="header-right">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
+            <a></a>
+            <a href="#about-me" class="active">About</a>
+            <a href="#skills">Skill</a>
             <a href="#contact">Contact</a>
-            <a href="#about">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
       </div>
+      <div class="inspirationalgrandpa">
       <h1 class="grandpaspeech">"Unni vai, vai a' lassari sìempri u' ciauru" </h1>
-    <div class="grandpaexplanation">
-      <p>Questo è ciò che mi ha insegnato mio nonno; ovunque tu vada lascia sempre il tuo profumo.</p>
-      <p>Distinguiti sempre, fai sì che gli altri non si possano dimenticare di te. Questo è quel che mi ha guidato in ogni aspetto della mia vita </p>
-    </div>
+        <div class="grandpaexplanation">
+          <p>Questo è ciò che mi ha insegnato mio nonno; ovunque tu vada lascia sempre il tuo profumo.</p>
+          <p>Distinguiti sempre, fai sì che gli altri non si possano dimenticare di te. Questo è quel che mi ha guidato in ogni aspetto della mia vita </p>
+        </div>
+      </div>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
         </div>
@@ -35,8 +38,8 @@
     </header>
     <section style="margin-top:10%">
       <h1 class="subtitle">About me</h1>
-      <div class="about-me skill-row">
-        <img class="images immaginep" src="immaginep.jpg">
+      <div class="about-me skill-row" id="about-me">
+        <img class="images immaginep show-on-scroll" src="immaginep.jpg">
         <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.
           Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.
           Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.
@@ -46,10 +49,10 @@
       </div>
     </section>
   <section>
-    <div class="skills">
+    <div class="skills" id="skills">
       <h2 class="subtitle">My Skills.</h2>
       <div class="skill-row">
-        <img class="images" src="cappuccio.jpg" alt="cappuccio">
+        <img class="images " src="cappuccio.jpg" alt="cappuccio">
         <h3>Lorem & Ipsum</h3>
         <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.
           Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.
@@ -58,22 +61,34 @@
         </p>
       </div>
       <div class="skill-row">
-        <img style="float:right" class="images" src="boxing-4677527_1920.jpg" alt="boxing">
+        <img style="float:right" class="images " src="boxing-4677527_1920.jpg" alt="boxing">
         <h3>Lorem Ipsum Dolor</h3>
         <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
       </div>
     </div>
   </section>
-    <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-    </script>
+  <footer>
+    <h1 class="contacts subtitle" id="contact">Contatti</h1>
+    <div class="footer">
+      <!--Form per inviare email, verrà aggiornato mano a mano che le mie conoscenze sul lato server miglioreranno-->
+      <form action="mailto:nicolocarrozza98@gmail.com" method="post" enctype="text/plain" id="emailform">
+        Nome:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Scrivi pure cosa t'interessa:<br>
+        <textarea name="comment" form="emailform" placeholder="Inserisci il tuo commento qui"></textarea><br><br>
+        <input type="submit" value="Send">
+      </form>
+      <div class="social">
+        <h1>Social:</h1>
+        <a href="https://www.facebook.com/niky.carrozza/" target="_blank"><img class="socialimg" src="facebook.png" alt="facebook"> </a> 
+        <a href="https://www.instagram.com/nikcar_98/" target="_blank"><img class="socialimg" src="instagram.png" alt="instagram"></a>
+        <a href="https://wa.me/3487308065" target="_blank"><img class="socialimg" src="whatsapp.png" alt="whatsapp"></a>
+      </div>
+    </div>  
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jsscript.js"></script>
   </body>
 </html>
