@@ -6,13 +6,13 @@ body{
   background-color:#F3E6E3;
 }
 
-/* Add a black background color to the top navigation */
+/*background color to the top navigation */
 .topnav {
     background-color:#f3e6e3;
     overflow: hidden;
     border-bottom: 1px solid black ;
-  }
-  
+    display:block;
+  } 
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
@@ -26,14 +26,14 @@ body{
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #fff;
     color: black;
   }
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
   }
-
+ /*semparo il titolo della pagina dal resto della barra di navigazione */
   .header-right {
     float: right;
   }
@@ -42,37 +42,33 @@ body{
       color: #0f0e0e;
       margin:0.3% 1%;
   }
-
+  /*definisco il font per la prima parte della pagina */ 
+  .grandpaspeech{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+  }
+  /*definisco l'immagine di background del jumbotron e la sua grandezza*/
   .jumbotron {
     width:100% ;
     background-image: url("alley-3630540_1920.jpg");
     background-size: 100% 100%;
     margin:0 0 0 0;
-  }
-  .container{
-    display:flex;
-    justify-content: space-around;
     height: 34rem;
   }
-  .grandpaspeech{
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-    font-size: 60px;
-  }
-  .grandpaexplanation{
-    text-align:center;
-    overflow-wrap: break-word;
-  }
+  /*definisco le immagini mostrate in "skills"*/
   .images{
     float:left;
-    width: 25%;
-    margin:5px 17px 0px 0;
+    width: 110%;
+    margin:0px 0px 0px -10px;
     border-radius: 50%;
 }
+/*definisco l'immagine personale e la nascondo fino a che non la si raggiunga scorrendo*/
 .images.immaginep{
-  width:30%;
-  margin:-50px auto 5px;
-  float:right;
+  display:block;
+  width:60%;
+  margin:-50px auto;
+  margin-bottom:50px;
+  float:none;
   border:1em solid #fff;
   border-bottom: 4em solid #fff;
   border-radius: .25em;
@@ -87,9 +83,19 @@ body{
   opacity: 1;
   transform: rotateZ(-2deg);
 }
-
+/* def. grandezza degli h2 di riferimento*/
+.subtitle{
+  font-size:300%;
+  font-weight: 600;
+}
+/* def. grandezza degli h3*/
+.subsubtitle{
+  font-size:270%;
+  font-weight:300%;
+  text-align:center;
+}
+/*def. le righe per ogni skill*/
 .skill-row{
-  display: inline-block;
   width:50%;
   margin: 100px auto;
   text-align:left;
@@ -97,25 +103,22 @@ body{
 .about-me.skill-row{
   width:70%;
 }
-.subtitle{
-  font-size:300%;
-  font-weight: 600;
-}
+/*def. il footer e l'organizzazione dei suoi componenti*/
 footer{
   border-top:1px solid black;
 }
 .footer{
   display:flex;
   justify-content: center;
-}
+}/*def. zona contti*/
 #emailform{
   text-align:left;
   margin-left:10%;
 }
-
 .socialimg{
-   width:6%;
+   width:15%;
 }
+
   /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
@@ -137,8 +140,73 @@ footer{
       text-align: left;
     }
   }
-  @media screen and (min-width: 1001px){
+  /*personalizzo il submit button del form*/
+  .myButton {
+    margin-left:0.6rem;
+    margin-bottom:3rem;
+    width:10rem;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .myButton:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  
+  /* faccio si che nelle grandezze "intermedie" le scritte dell'header non si sovrappongano*/
+  @media screen and (max-width:700px) and (min-width:601px){
+    .inspirationalgrandpa{
+      height: 23rem;
+    }
+  }
+  @media screen and (max-width:1240px) and (min-width:701px){
+    .inspirationalgrandpa{
+      height: 16rem;
+    }
+  }
+  /*adatto le grandezze allo schermo di un pc*/
+  @media screen and (min-width: 1241px){
     .grandpaexplanation{
       line-height:50%;
     }
+    .inspirationalgrandpa{
+      height: 8rem;
+    }
+    .images.immaginep{
+      width:30%;
+      margin:-50px auto 5px;
+      float:right;
+    }
+    .skill-row{
+      display: inline-block;
+      text-align:left;
+    }
+    .images{
+      width: 25%;
+      margin:5px 17px 0px 0px;
+    }
+    .socialimg{
+      width:8%;
+   }
+   .subrow{
+     margin-top:-0.1%;
+   }
+   .subsubtitle{
+    text-align:left;
+  }
   }
